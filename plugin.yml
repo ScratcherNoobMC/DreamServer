@@ -1,0 +1,121 @@
+name: DreamServer
+version: 1.1.2
+main: com.scratchernoobyt.ds.DreamServer
+api-version: 1.21
+author: Scratcher NOOB
+description: Plugin para tener tu servidor soñado.
+depend: [NoobiCore]
+
+commands:
+  ds:
+    description: Comando principal del Plugin
+    usage: /ds <ayuda|recargar|version>
+  tiempo:
+    description: Comando para cambiar el tiempo en el mundo.
+    usage: /tiempo <dia|noche|medianoche|amanecer|mediodia|atardecer>
+  puntoinicial:
+    description: Comando para seleccionar el punto de aparicion.
+    usage: /puntoinicial
+  inicio:
+    description: Ir al punto de aparicion.
+    usage: /inicio
+  clima:
+    description: Cambiar el clima
+    usage: /clima <soleado|lluvioso|tormentoso>
+  mundo:
+    description: Teletransportar a un mundo.
+    usage: /mundo <nombreDelMundo>
+  test:
+    description: Muestra informacion.
+    usage: /test
+  cama:
+    description: Teletransportate a tu cama.
+    usage: /cama
+  punto:
+    description: Teletransportate a un punto definido por algun administrador.
+    usage: /punto <crear|nombre|eliminar>
+  reglas:
+    description: Muestra las reglas del servidor.
+    usage: /reglas
+  renombrar:
+    description: Renombra el item en la mano.
+    usage: /renombrar <nombre>
+  descripcion:
+    description: Cambia la descripcion del item en mano.
+    usage: /descripcion <texto>
+  nombre:
+    description: Cambia tu nombre (Solo estetico)
+    usage: /nombre <nombre>
+  brillo:
+    description: Cambia el brillo del objeto en la mano principal.
+    usage: /brillo
+  perms:
+    description: Gestiona permisos por jugador.
+    usage: /perms <lista|quitar|dar> <nick> [permiso]
+  hotbar:
+    description: Sistema para crear hotbars personalizados.
+    usage: /hotbar <crear|mostrar|eliminar>
+  prefijo:
+    description: Gestiona prefijos.
+    usage: /prefijo <ver|set|permiso|eliminar>
+permissions:
+  ds.principalcommand:
+    description: Permite usar /ds
+    default: op
+  ds.time:
+    description: Permite usar /tiempo
+    default: op
+  ds.setspawn:
+    description: Permite usar /puntoinicial
+    default: op
+  ds.start:
+    description: Permite usar /inicio
+    default: true
+  ds.weather:
+    description: Permite usar /clima
+    default: op
+  ds.world:
+    description: Permite usar /mundo
+    default: op
+  ds.test:
+    description: Permite usar /test
+    default: op
+  ds.bed:
+    description: Permite usar /cama
+    default: true
+  ds.point:
+    description: Permite usar /punto
+    default: true
+  ds.createpoint:
+    description: Permite usar /punto crear
+    default: op
+  ds.deletepoint:
+    description: Permite usar /punto eliminar
+    default: op
+  ds.rules:
+    description: Permite usar /reglas
+    default: true
+  ds.rename:
+    description: Permite usar /renombrar
+    default: op
+  ds.description:
+    description: Permite usar /descripcion
+    default: op
+  ds.name:
+    description: Permite usar /nombre
+    default: op
+  ds.glow:
+    description: Permite usar /brillo
+    default: op
+  ds.perms:
+    description: Permite usar /perms
+    default: op
+  ds.hotbar:
+    description: Permite usar /hotbar
+    default: op
+  ds.prefix:
+    description: Pemite usar /prefijo
+    default: op
+  ds.npc:
+    description: Permite usar /npc
+    default: op
